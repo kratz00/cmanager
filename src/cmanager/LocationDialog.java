@@ -310,7 +310,9 @@ public class LocationDialog extends JDialog {
 					{
 						btnRetrieve.setEnabled(true);
 					}
-				} catch (Exception e) {}
+				} catch (Exception e) {
+					ExceptionPanel.showErrorDialog(e);
+				}
 			}
 		}));
 	}
